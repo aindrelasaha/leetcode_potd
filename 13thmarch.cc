@@ -20,3 +20,19 @@ public:
         return -1;
     }
 };
+
+
+#include <cmath>
+
+class Solution {
+public:
+    int pivotInteger(int n) {
+        int s = (n + 1) * n / 2;
+        
+        if (sqrt(s) == int(sqrt(s))) {
+            return int(sqrt(s));
+        } else {
+            return -1;
+        }
+    }
+};
